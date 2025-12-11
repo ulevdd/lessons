@@ -26,7 +26,7 @@ public class Student {
     }
         Student (){
     }
-
+//Lesson6 (2.4)
         void showInfo (Student st){
 
             System.out.println("------");
