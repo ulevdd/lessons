@@ -8,7 +8,6 @@ public class Student {
     String department= "Нет данных";
     double oc1;
     double oc2;
-    double srOc;
 
      Student (int id1, String name1, String gorod1, String department1, double ocM, double ocA){
         id=id1;
