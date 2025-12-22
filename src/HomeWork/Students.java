@@ -41,11 +41,6 @@ public class Students {
             else {
                 System.out.println("Имена разные");
             }
-
-
-
-
-
     }
 }
 class StudentsTest {
