@@ -1,7 +1,6 @@
 package Lesson11;
 
 public class Student {
-
     String name;
     int course;
     double grade;
@@ -10,25 +9,31 @@ public class Student {
         this.name=name;
         this.course=course;
         this.grade=grade;
-
     }
 
-    public static void  swap (Student s1, Student s2){
-        Student s3= s1;
-        s1=s2;
-        s2=s3;
+    public static void  swapStudent (Student st1, Student st2){
+        Student st3;
+        st3=st1;
+        st1=st2;
+        st2=st3;
+        System.out.println(st1.name);
     }
 
-    public static void changeName (Student s1){
-        s1.name="Vasya";
-    }
+        public static void changeName (Student st1){
+            System.out.println("Do: " + st1.name);
+            st1.name = "Vasya";
+            System.out.println("posle: "+ st1.name  );
+
+        }
 
     public static void main(String[] args) {
-        Student st1 = new Student("Ivan", 3, 9.5);
-        Student st2 = new Student("Petr", 1, 3.3);
+
+        Student st1 = new Student("Ivan", 3, 9.3);
+        Student st2 = new Student("Petr", 1, 5.3);
+        System.out.println(st1.name);
+        swapStudent(st1,st2);
         changeName(st2);
         System.out.println(st2.name);
-
-
     }
+
 }

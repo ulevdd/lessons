@@ -2,29 +2,43 @@ package Lesson8;
 
 public class Student {
 
-
-    String name;
+    public String name;
     int course;
     static int count;
+    int a;
 
-    public Student(String name2, int course2) {
+
+    public Student (String name, int course){
         count++;
-        name = name2;
-        course = course2;
-        System.out.println("Студент № " + count + " Создан");
+        this.name=name;
+        this.course = course;
+        System.out.println("Студент #" + count + " создан");
     }
 
-    public static void main(String[] args) {
-        Student st1= new Student("Ivan", 2);
-        Student st2 = new Student("Petr", 4);
-        Student st3 = new Student("Alena", 2);
-        System.out.println(st1.count);
+    public Student () {
+
+    }
+
+    public  static  void showCount () {
+        System.out.println(count);
+    }
+
+    public void showInfo (){
+        System.out.println("Hello2");
+    }
+
+    void abc (){
+
+        a++;
+
 
     }
 
 }
-    class StudentTest {
+class StudentTest {
+    public static void main(String[] args) {
+
 
     }
 
-
+}
